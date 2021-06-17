@@ -84,16 +84,16 @@ nav li a {
     text-decoration: none;
     color: white;
     border: 2px solid transparent;
-    padding: 2px;
+    padding: 7px;
 }
 
 nav li a:hover {
-    border: 2px solid red;
+    border: 3px solid red;
     border-radius: 0.25em;
 }
 
 .active__page {
-    border: 2px solid red;
+    border: 3px solid red;
     border-radius: 0.25em;
 }
 
@@ -227,6 +227,90 @@ nav li a:hover {
     color: red;
 }
 
+/* ABOUT US */
+
+.about__container__1 {
+    position: relative;
+}
+
+.about__image {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.about__container {
+    position: absolute;
+    width: 300px;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    padding: 10px 10px 0px 10px;
+    background-color: rgb(32, 29, 27, 0.9);
+}
+
+.about__title {
+    color: white;
+    font-size: 1.5em;
+}
+
+.about__title::before {
+    content: "| ";
+    color: red;
+}
+
+.about__title::after {
+    content: " |";
+    color: red;
+}
+
+.about__intro {
+    color: white;
+}
+
+.about__our__passion {
+    color: white;
+    font-size: 1.5em;
+    padding-top: 15px;
+}
+
+.about__our__passion::before {
+    content: "| ";
+    color: red;
+}
+
+.about__our__passion::after {
+    content: " |";
+    color: red;
+}
+
+.about__our__passion__paragraph {
+    color: white;
+    padding-top: 15px;
+}
+
+.about__who {
+    color: white;
+    font-size: 1.5em;
+    padding-top: 15px;
+}
+
+.about__who::before {
+    content: "| ";
+    color: red;
+}
+
+.about__who::after {
+    content: " |";
+    color: red;
+}
+
+.about__who__paragraph {
+    color: white;
+    padding-top: 15px;
+}
 
 /* FOOTER */
 
@@ -242,12 +326,13 @@ footer {
     background-color: rgb(32, 29, 27);
 }
 
-.footer__social_paragraph {
+.footer__social__paragraph {
     color: white;
     font-size: 0.8em;
     padding-top: 10px;
     width: 250px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .footer__social {
