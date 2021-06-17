@@ -33,7 +33,7 @@ h1 {
 
 .border {
     border-top: 2px solid red;
-    width: 160px;
+    width: 100%;
     margin: 0 auto;
 }
 
