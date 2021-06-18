@@ -440,7 +440,6 @@ input[type="text"], select {
     width: 100%;
     padding: 10px 6px;
     margin: 10px 0;
-    border-radius: 1em;
     border: 3px solid transparent;
     font-size: 1em;
 }
@@ -457,7 +456,6 @@ input[type="submit"] {
     width: 100%;
     padding: 10px 6px;
     margin: 10px 0;
-    border-radius: 1em;
     border: 3px solid transparent;
     background-color: grey;
     font-size: 1.2em;
