@@ -415,7 +415,6 @@ form {
     background-color: rgb(32, 29, 27, 0.9);
     padding: 10px;
     justify-content: center;
-    border-radius: 1em;
 }
 
 .contact__title {
@@ -452,7 +451,7 @@ input[type="text"]:hover, input[type="submit"]:hover, select:hover {
     border: 3px solid red;
 }
 
-input[type="submit"] {
+#contact__submit {
     width: 100%;
     padding: 10px 6px;
     margin: 10px 0;
