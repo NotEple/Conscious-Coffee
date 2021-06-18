@@ -412,7 +412,7 @@ form {
     max-width: 400px;
     transform: translate(-50%, -50%);
     margin: 0 auto;
-    background-color: rgb(32, 29, 27, 0.9);
+    background-color: #201d1be6;
     padding: 10px;
     justify-content: center;
 }
@@ -448,7 +448,7 @@ input:focus, select:focus {
 }
 
 input[type="text"]:hover, input[type="submit"]:hover, select:hover {
-    border: 3px solid red;
+    border: 3px solid #ff0000;
 }
 
 #contact__submit {
