@@ -469,20 +469,27 @@ input[type="text"]:hover, input[type="submit"]:hover, select:hover {
 /* SHOP */
 
 .shop__container {
-    column-count: 1;
+    display: grid;
+    grid-template: 2fr 2fr;
     width: 100%;
     margin: 0 auto;
 }
 
 .shop__card {
     margin: 0 auto;
-    width: 80%;
+    border: 1px solid red;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 .shop__img {
     max-width: 400px;
     width: 100%;
     display: block;
+    margin: 0 auto;
+}
+
+.shop__text {
     margin: 0 auto;
 }
 
@@ -530,19 +537,22 @@ input[type="text"]:hover, input[type="submit"]:hover, select:hover {
     }
 
     .shop__container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 20px;
         margin: 0 auto;
+        height: 100%;
         width: 80%;
-        column-count: 3;
-        column-gap: 20px;
     }
 
     .shop__card {
-        margin: 0px;
-        width: 100%;
+        max-width: 400px;
     }
 
     .shop__img {
         max-width: 100%;
+    }
+
+    .shop__text {
     }
 }
 
@@ -553,5 +563,9 @@ input[type="text"]:hover, input[type="submit"]:hover, select:hover {
 
     nav li {
         padding-right: 5px;
+    }
+
+    .shop__container {
+        grid-template-columns: 1fr 1fr;
     }
 }
