@@ -65,6 +65,7 @@ nav, #hamburger__menu {
     display: block;
 }
 
+
 .nav__links {
     list-style: none;
     letter-spacing: 2px;
@@ -547,6 +548,17 @@ input[type="text"]:hover, input[type="submit"]:hover, select:hover {
 
     .about__header {
         font-size: 2em;
+    }
+
+    .index__middle__container {
+        width: 400px;
+    }
+
+    .index__viewmore__paragraph {
+        margin: 0 auto;
+        width: 350px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     
     .border {
