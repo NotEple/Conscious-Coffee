@@ -3,8 +3,8 @@
 }
 
 * {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
@@ -20,6 +20,7 @@ a {
 
 header {
     background-color: rgb(32, 29, 27);
+    height: 100%;
 }
 
 h1 {
@@ -27,12 +28,12 @@ h1 {
 }
 
 .index__h1 {
-    display: flex;
     margin: 0 auto;
     color: white;
     text-transform: uppercase;
     font-size: 1.5em;
     max-width: 200px;
+    letter-spacing: 5px;
 }
 
 .border {
@@ -87,8 +88,7 @@ nav li {
 nav li a {
     text-decoration: none;
     color: white;
-    border: 2px solid transparent;
-    padding: 7px;
+    border: 3px solid transparent;
 }
 
 nav li a:hover {
@@ -466,27 +466,92 @@ input[type="text"]:hover, input[type="submit"]:hover, select:hover {
     font-size: 1em;
 }
 
+/* SHOP */
+
+.shop__container {
+    column-count: 1;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.shop__card {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.shop__img {
+    max-width: 400px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
 
 @media screen and (min-width: 768px) {
     header {
         height: 8vh;
+        display: flex;
+        height: 100%;
+        margin-bottom: 40px;
+        border-bottom: 2px solid red;
+    }
+
+    .index__h1 {
+        margin-left: 5px;
     }
     
+    .border {
+        display: none;
+    }
+
     .hamburger {
         display: none;
     }
 
+    main {
+        height: 100%;
+    }
+
     nav {
-        display: inline-block;
+        display: flex;
         width: 100%;
     }
 
     .nav__links {
         display: flex;
-        width: 50%;
-        justify-content: space-between;
         margin-left: auto;
-        height: 100%;
-        border: none;
+        align-items: center;
+        font-size: 1.5em;
+        margin-top: 0px;
+        border-bottom: none;
+    }
+
+    nav li {
+        padding-right: 30px;
+    }
+
+    .shop__container {
+        margin: 0 auto;
+        width: 80%;
+        column-count: 3;
+        column-gap: 20px;
+    }
+
+    .shop__card {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .shop__img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .nav__links {
+        font-size: 1em;
+    }
+
+    nav li {
+        padding-right: 5px;
     }
 }
