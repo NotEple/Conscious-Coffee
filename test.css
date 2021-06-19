@@ -629,10 +629,6 @@ input[type="text"]:hover, input[type="submit"]:hover, select:hover {
 
 @media screen and (max-width: 1000px) {
 
-    .nav__links {
-        font-size: 1.1em;
-    }
-
     nav li {
         padding-right: 5px;
     }
