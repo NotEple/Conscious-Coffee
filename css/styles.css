@@ -616,7 +616,7 @@ input[type="text"]:hover, input[type="submit"]:hover, select:hover {
         width: 400px;
     }
 
-    .about__container {
+    .about__card {
         width: 600px;
     }
 
