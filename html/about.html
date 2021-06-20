@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cafca22d75.js" crossorigin="anonymous"></script>
+
+    <!-- Meta tags for SEO -->
+
     <meta name="description" content="Conscious Coffee, an organic choise of coffee.">
     <meta name="keywords" content="Coffe, Organic, Organic Coffee, Coffee Organic, Norway Organic Coffee">
+
+    <!-- Theme color/Author/Copyright -->
+
     <meta name="theme-color" content="#201d1b">
     <meta name="author" content="Erlend Molvik Svanevik">
-    <meta name="copyright" content="Erlend Svanevik. All rights reserved. All trademarks and registerd trademarks are the property of
-    their respective owners.©">
+    <meta name="copyright" content="Erlend Svanevik. All rights reserved. All trademarks and registerd trademarks are the property of their respective owners.©">
+
+    <!-- Stylesheet/Font Import/Favicon -->
+
     <link rel="stylesheet" href="/css/styles.css">
-    <script src="https://kit.fontawesome.com/cafca22d75.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
     <link rel="icon" type="image/png" href="/img/favicon.ico">
+
+
     <title>Conscious Coffee | About</title>
 </head>
 <body>
+
+    <!-- Header/Logo/Hamburgermenu -->
+
     <header>
         <a href="../index.html">
         <h1 class="index__h1">Conscious Coffee</h1>
@@ -25,17 +37,21 @@
         <label class="hamburger" for="hamburger__menu"><i class="fas fa-bars"></i></label>
         <div class="border"></div>
         <input type="checkbox" id="hamburger__menu">
+
+        <!-- NAVIGATION -->
+
         <nav>
             <ul class="nav__links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="/html/about.html" class="active__page">About Us</a></li>
-                <li><a href="/html/contact.html">Contact Us</a></li>
-                <li><a href="/html/coffieshops.html">Shops</a></li>
-                <li><a href="/html/coffieshopsmore.html">Closest Shop</a></li>
+                <li><a href="../index.html" aria-label="Redirects to the homepage">Home</a></li>
+                <li><a href="/html/about.html" aria-label="Redirects to the about us page" class="active__page">About Us</a></li>
+                <li><a href="/html/contact.html" aria-label="Redirects to the contact us page">Contact Us</a></li>
+                <li><a href="/html/coffieshops.html" aria-label="Redirects to the shops page">Shops</a></li>
+                <li><a href="/html/coffieshopsmore.html" aria-label="Redirects to the closest shop near you" >Closest Shop</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- CONTENT OF THE PAGE -->
 
     <main>
         <section class="about__container">
@@ -52,6 +68,7 @@
         </section>
     </main>
 
+    <!-- FOOTER WITH SOCAILS AND LEGAL INFO -->
 
     <footer>
         <div class="footer__container">
@@ -69,9 +86,9 @@
             </ul>
         </div>
             <div class="footer__legal">
-                <a href="#" rel="noopener" class="footer__legal__links">Privacy Policy</a>
-                <a href="#" rel="noopener" class="footer__legal__links">Legal</a>
-                <a href="#" rel="noopener" class="footer__legal__links">Terms of Service</a>
+                <a href="#" rel="noreferrer" class="footer__legal__links" aria-label="Redirect to our privacy and policy page">Privacy Policy</a>
+                <a href="#" rel="noreferrer" class="footer__legal__links" aria-label="Redirect to our legal page">Legal</a>
+                <a href="#" rel="noreferrer" class="footer__legal__links" aria-label="Redirect to our terms of service page">Terms of Service</a>
             </div>
     </footer>
 </body>

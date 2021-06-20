@@ -1,9 +1,13 @@
+/* Remove default styles */
+
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+
 
 html {
     background-color: rgb(32, 29, 27);
@@ -19,59 +23,17 @@ header {
     background-color: #201d1b;
     height: 100%;
     text-align: center;
+    border-bottom: 2px solid red;
 }
 
-.index__h1 {
-    display: inline-block;
-    height: 100%;
-    color: white;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    width: 200px;
-    letter-spacing: 5px;
-}
+/* NAVIGATION */
 
-.border {
+nav {
     border-top: 2px solid red;
-    width: 100%;
-    margin: 0 auto;
 }
-
-.logo {
-    width: 50%;
-}
-
-/* NAVIGATION*/
 
 nav, #hamburger__menu {
     display: none;
-}
-
-.hamburger {
-    position: absolute;
-    font-size: 3em;
-    margin-left: 10px;
-    display: inline-block;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-}
-
-#hamburger__menu:checked ~ nav {
-    display: block;
-}
-
-
-.nav__links {
-    list-style: none;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-    font-size: 2em;
-    cursor: pointer;
-    margin-top: 20px;
-    border-bottom: 2px solid red;
 }
 
 nav li {
@@ -91,12 +53,57 @@ nav li a:hover {
     border-radius: 0.25em;
 }
 
+/* Active Page */
+
 .active__page {
     border: 3px solid red;
     border-radius: 0.25em;
 }
 
-/* NAME LATER! */
+/* Hamburger Menu */
+
+.hamburger {
+    position: absolute;
+    font-size: 3em;
+    margin-left: 10px;
+    display: inline-block;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+}
+
+#hamburger__menu:checked ~ nav {
+    display: block;
+}
+
+.nav__links {
+    list-style: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+
+/* Index Styling */
+
+.index__h1 {
+    display: inline-block;
+    height: 100%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    width: 200px;
+    letter-spacing: 5px;
+}
+
+.logo {
+    width: 50%;
+}
 
 .index__header__container {
     position: relative;
@@ -230,7 +237,9 @@ nav li a:hover {
     color: red;
 }
 
-/* ABOUT US */
+
+
+/* About us style page */
 
 .about__container {
     display: flex;
@@ -307,70 +316,7 @@ nav li a:hover {
     padding-top: 15px;
 }
 
-/* FOOTER */
 
-footer {
-    background-color: rgb(32, 29, 27);
-    border-top: 2px solid red;
-    height: 100%;
-}
-
-.footer_container {
-    max-width: 375px;
-    margin: 0 auto;
-    background-color: rgb(32, 29, 27);
-}
-
-.footer__social__paragraph {
-    font-size: 0.8em;
-    padding-top: 10px;
-    width: 250px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.footer__social {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    text-decoration: none;
-    max-width: 250px;
-    margin: 0 auto;
-    font-size: 2em;
-}
-
-.footer__social li {
-    list-style: none;
-}
-
-.facebook {
-    color:#3b5998;
-}
-
-.youtube {
-    color:#FF0000;
-}
-
-.twitter {
-    color:#00acee;
-}
-
-.footer__legal {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    text-decoration: none;
-    max-width: 300px;
-    margin: 0 auto;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    font-size: 0.8em;
-}
-
-.footer__legal__links {
-    text-transform: uppercase;
-    color: white;
-}
 
 /* CONTACT/FORM */
 
@@ -463,7 +409,9 @@ input[type="text"]:hover, input[type="submit"]:hover, select:hover {
     font-size: 1.5em;
 }
 
-/* SHOP */
+
+
+/* Shops page styles */
 
 .shop__container {
     width: 80%;
@@ -510,7 +458,9 @@ input[type="text"]:hover, input[type="submit"]:hover, select:hover {
     border-bottom: 2px solid red;
 }
 
-/* MORE ABOUT SHOP */
+
+
+/* More about closest shop styles page */
 
 .more__container {
     position: relative;
@@ -594,6 +544,77 @@ input[type="text"]:hover, input[type="submit"]:hover, select:hover {
     border-bottom: 2px solid red;
 }
 
+
+
+/* Footer Styling */
+
+footer {
+    background-color: rgb(32, 29, 27);
+    border-top: 2px solid red;
+    height: 100%;
+}
+
+.footer_container {
+    max-width: 375px;
+    margin: 0 auto;
+    background-color: rgb(32, 29, 27);
+}
+
+.footer__social__paragraph {
+    font-size: 0.8em;
+    padding-top: 10px;
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+    max-width: 250px;
+    margin: 0 auto;
+    font-size: 2em;
+}
+
+.footer__social li {
+    list-style: none;
+}
+
+.facebook {
+    color:#3b5998;
+}
+
+.youtube {
+    color:#FF0000;
+}
+
+.twitter {
+    color:#00acee;
+}
+
+.footer__legal {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+    max-width: 300px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 0.8em;
+}
+
+.footer__legal__links {
+    text-transform: uppercase;
+    color: white;
+}
+
+
+
+/* Media querie for screen with a width of 768px or less */
+
 @media screen and (min-width: 768px) {
     header {
         height: 8vh;
@@ -601,6 +622,37 @@ input[type="text"]:hover, input[type="submit"]:hover, select:hover {
         height: 100%;
         border-bottom: 2px solid red;
     }
+
+    main {
+        height: 100%;
+    }
+
+    nav {
+        display: flex;
+        width: 100%;
+        border-top: none;
+    }
+
+    /* Navigation */
+
+    .hamburger {
+        display: none;
+    }
+
+    nav li {
+        padding-right: 30px;
+    }
+
+    .nav__links {
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+        font-size: 1.1em;
+        margin-top: 0px;
+        border-bottom: none;
+    }
+
+    /* Index */
 
     .index__h1 {
         margin-left: 5px;
@@ -616,14 +668,6 @@ input[type="text"]:hover, input[type="submit"]:hover, select:hover {
         width: 400px;
     }
 
-    .about__card {
-        width: 600px;
-    }
-
-    .about__header {
-        font-size: 2em;
-    }
-
     .index__middle__container {
         width: 400px;
     }
@@ -634,40 +678,24 @@ input[type="text"]:hover, input[type="submit"]:hover, select:hover {
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    
-    .border {
-        display: none;
+
+    /* About us */
+
+    .about__card {
+        width: 600px;
     }
 
-    .hamburger {
-        display: none;
+    .about__header {
+        font-size: 2em;
     }
 
-    main {
-        height: 100%;
-    }
-
-    nav {
-        display: flex;
-        width: 100%;
-    }
-
-    .nav__links {
-        display: flex;
-        margin-left: auto;
-        align-items: center;
-        font-size: 1.1em;
-        margin-top: 0px;
-        border-bottom: none;
-    }
-
-    nav li {
-        padding-right: 30px;
-    }
+    /* Contact */
 
     .contact__title {
         font-size: 2.5em;
     }
+
+    /* Shops */
 
     .shop__container {
         display: grid;
@@ -687,16 +715,11 @@ input[type="text"]:hover, input[type="submit"]:hover, select:hover {
         max-width: 100%;
     }
 
-    .shop__text {
-    }
-
     .shop__location {
         font-size: 1.4em;
     }
 
-    .shop__address {
-
-    }
+    /* Image styling */
 
     .page__background,
     .about__image,
@@ -704,6 +727,8 @@ input[type="text"]:hover, input[type="submit"]:hover, select:hover {
         width: 1920px;
         height: 800px;
     }
+
+    /* Closest Shops */
 
     .more__img__background {
         width: 1920px;
@@ -723,7 +748,11 @@ input[type="text"]:hover, input[type="submit"]:hover, select:hover {
     }
 }
 
+/* Media querie for minor changes when the width of the screen is more then 1024px */
+
 @media screen and (max-width: 1024px) {
+
+    /* Link styles */
 
     .nav__links {
         font-size: 0.9em;
@@ -732,6 +761,8 @@ input[type="text"]:hover, input[type="submit"]:hover, select:hover {
     nav li {
         padding-right: 5px;
     }
+
+    /* Shops Styling */
 
     .shop__container {
         grid-template-columns: 1fr 1fr;
