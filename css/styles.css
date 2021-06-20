@@ -232,7 +232,7 @@ nav li a:hover {
 
 /* ABOUT US */
 
-.about__container__1 {
+.about__container {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -244,7 +244,7 @@ nav li a:hover {
     display: block;
 }
 
-.about__container {
+.about__card {
     position: absolute;
     width: 320px;
     top: 50%;
