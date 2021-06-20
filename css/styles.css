@@ -7,6 +7,7 @@
 
 html {
     background-color: rgb(32, 29, 27);
+    color: white;
 }
 
 a {
@@ -48,7 +49,6 @@ nav, #hamburger__menu {
 
 .hamburger {
     position: absolute;
-    color: white;
     font-size: 3em;
     margin-left: 10px;
     display: inline-block;
@@ -121,11 +121,11 @@ nav li a:hover {
     width: 250px;
     max-width: 375px;
     background-color: rgb(32, 29, 27, 0.9);
+    border-radius: 0.25em;
 }
 
 .index__header__title {
     text-transform: uppercase;
-    color: white;
     font-size: 2em;
     margin: 10px;
 }
@@ -162,10 +162,10 @@ nav li a:hover {
     margin: 0 auto;
     max-width: 375px;
     background-color: rgb(32, 29, 27, 0.9);
+    border-radius: 0.25em;
 }
 
 .index__slang {
-    color: white;
     font-size: 1em;
     margin: 10px;
     text-align: center;
@@ -189,10 +189,10 @@ nav li a:hover {
     margin: 0 auto;
     max-width: 375px;
     background-color: rgb(32, 29, 27, 0.9);
+    border-radius: 0.25em;
 }
 
 .index__viewmore__paragraph {
-    color: white;
     max-width: 200px;
     margin: 0 auto;
     text-align: center;
@@ -221,6 +221,7 @@ nav li a:hover {
     box-shadow: inset 0 0 0 0 #ccc;
     transition: ease-out 0.5s;
     margin: 0 auto;
+    border-radius: 0.25em, 0.25em;
 }
 
 .index__viewmore__shops:hover {
@@ -252,10 +253,10 @@ nav li a:hover {
     transform: translate(-50%, -50%);
     padding: 10px 10px 0px 10px;
     background-color: rgb(32, 29, 27, 0.9);
+    border-radius: 0.25em;
 }
 
 .about__header {
-    color: white;
     font-size: 1.3em;
 }
 
@@ -270,7 +271,6 @@ nav li a:hover {
 }
 
 .about__text {
-    color: white;
     padding: 15px;
 }
 
@@ -285,12 +285,10 @@ nav li a:hover {
 }
 
 .about__our__passion__paragraph {
-    color: white;
     padding-top: 15px;
 }
 
 .about__who {
-    color: white;
     font-size: 1.3em;
     padding-top: 15px;
 }
@@ -306,7 +304,6 @@ nav li a:hover {
 }
 
 .about__who__paragraph {
-    color: white;
     padding-top: 15px;
 }
 
@@ -325,7 +322,6 @@ footer {
 }
 
 .footer__social__paragraph {
-    color: white;
     font-size: 0.8em;
     padding-top: 10px;
     width: 250px;
@@ -372,8 +368,8 @@ footer {
 }
 
 .footer__legal__links {
-    color: white;
     text-transform: uppercase;
+    color: white;
 }
 
 /* CONTACT/FORM */
@@ -407,11 +403,11 @@ form {
     background-color: #201d1be6;
     padding: 10px;
     justify-content: center;
+    border-radius: 0.25em;
 }
 
 .contact__title {
     text-align: center;
-    color: white;
     padding: 5px;
     font-size: 1.5em;
     border-bottom: 2px solid red;
@@ -452,21 +448,19 @@ input[type="text"]:hover, input[type="submit"]:hover, select:hover {
     font-size: 1.2em;
     cursor: pointer;
     width: 100%;
-    color: white;
     font-size: 1.5em;
     cursor: pointer;
     box-shadow: inset 0 0 0 0 #ccc;
 }
 
 #contact__submit:hover {
-    box-shadow: inset 400px 0 0 0 #ccc;
+    box-shadow: inset 600px 0 0 0 #ccc;
     transition: 0.5s ease;
     color: red;
 }
 
 .contact__text, #contact__text {
-    color: white;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 /* SHOP */
@@ -478,7 +472,7 @@ input[type="text"]:hover, input[type="submit"]:hover, select:hover {
 
 .shop__card {
     margin: 0 auto;
-    padding: 6px 20px 6px 20px;
+    padding: 6px 10px 6px 10px;
     background-color: rgb(0, 0, 0, 0.4);
     border-radius: 0.25em;
     margin-bottom: 30px;
@@ -487,7 +481,6 @@ input[type="text"]:hover, input[type="submit"]:hover, select:hover {
 }
 
 .shop__location {
-    color: white;
     font-size: 2em;
     text-align: center;
     text-transform: uppercase;
@@ -500,19 +493,101 @@ input[type="text"]:hover, input[type="submit"]:hover, select:hover {
     width: 100%;
     display: block;
     margin: 0 auto;
-    border-bottom: 2px solid red;
+    border-radius: 0.25em;
 }
 
 .shop__text {
     margin: 0 auto;
-    color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
     border-bottom: 2px solid red;
 }
 
 .shop__address {
     margin: 0 auto;
-    color: white;
     padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 2px solid red;
+}
+
+/* MORE ABOUT SHOP */
+
+.more__container {
+    position: relative;
+}
+
+.more__img__background {
+    display: block;
+    max-width: 100%;
+    height: 800px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.more__card {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    max-width: 350px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    background-color: #201d1be6;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 0.25em;
+}
+
+.more__img__resturant, 
+.more__img__map {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 0.25em;
+}
+
+.more__header {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.more__header::before {
+    content: "| ";
+    color: red;
+}
+
+.more__header::after {
+    content: " |";
+    color: red;
+}
+
+.more__faq {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.more__faq::before {
+    content: "| ";
+    color: red;
+}
+
+.more__faq::after {
+    content: " |";
+    color: red;
+}
+
+.more__text {
+    padding-top: 10px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
     border-bottom: 2px solid red;
 }
 
@@ -578,7 +653,7 @@ input[type="text"]:hover, input[type="submit"]:hover, select:hover {
         display: flex;
         margin-left: auto;
         align-items: center;
-        font-size: 1.5em;
+        font-size: 1.1em;
         margin-top: 0px;
         border-bottom: none;
     }
@@ -613,7 +688,7 @@ input[type="text"]:hover, input[type="submit"]:hover, select:hover {
     }
 
     .shop__location {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
     .shop__address {
@@ -621,16 +696,25 @@ input[type="text"]:hover, input[type="submit"]:hover, select:hover {
     }
 
     .page__background,
-    .about__image {
+    .about__image,
+    .more__img__background {
         width: 1920px;
         height: 800px;
+    }
+
+    .more__img__background {
+        width: 1920px;
+        height: 1200px;
+    }
+    .more__card {
+        max-width: 600px;
     }
 }
 
 @media screen and (max-width: 1000px) {
 
     .nav__links {
-        font-size: 1.1em;
+        font-size: 0.9em;
     }
 
     nav li {
@@ -642,7 +726,7 @@ input[type="text"]:hover, input[type="submit"]:hover, select:hover {
     }
 
     .shop__location {
-        font-size: 2em;
+        font-size: 1.5em;
         text-align: center;
         text-transform: uppercase;
         border-bottom: 2px solid red;
